@@ -1,0 +1,65 @@
+!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Student Management System</h1>
+
+    <div class="form-box">
+
+      <input type="text" id="name" placeholder="Enter Name">
+
+      <input type="text" id="address" placeholder="Enter Address">
+
+      <input type="text" id="batch" placeholder="Enter Batch">
+
+      <div class="button-group">
+        <button onclick="addStudent()">Add New Record</button>
+      </div>
+
+    </div>
+
+    <div class="count-box">
+      <div class="count-card">
+        Total Students:
+        <span id="totalCount">0</span>
+      </div>
+
+      <div class="count-card">
+        Students in Batch B002:
+        <span id="b002Count">0</span>
+      </div>
+    </div>
+
+    <h2>Student List</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Batch</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="studentTableBody">
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
